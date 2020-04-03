@@ -1,0 +1,11 @@
+<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!LeftBar.Button4.Width" SuggestedHeight="!LeftBar.Button4.Height" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="!MapBar.Buttons.HorizonalSpacing" UpdateChildrenStates="true">
+  <Children>
+    <ButtonIconOffsetWidget Id="CampButton" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MapBar.Left.Button4" ButtonIcon="PartyIcon" Command.Click="ExecuteOpenCamp" IsEnabled="@IsCampEnabled" IsSelected="@IsCampActive" PressedXOffset="!MapBar.ButtonIcon.XOffset" PressedYOffset="!MapBar.ButtonIcon.YOffset" UpdateChildrenStates="true">
+      <Children>
+        <Widget Id="CampIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!LeftBar.Icon4.Width" SuggestedHeight="!LeftBar.Icon4.Height" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MapBar.Left.Icon4"/>
+        <HintWidget DataSource="{CampHintText}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+      </Children>
+    </ButtonIconOffsetWidget>
+    <HintWidget DataSource="{CampHintText}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+  </Children>
+</Widget>
