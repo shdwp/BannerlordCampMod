@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.0.0.10, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Lib.Harmony.2.0.0.10\lib\net472\0Harmony.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SandBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>F:\SteamFastLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SandBox\bin\Win64_Shipping_Client\SandBox.dll</HintPath>
@@ -62,6 +63,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml" />
     <Reference Include="TaleWorlds.BattlEye.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>F:\SteamFastLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.BattlEye.Client.dll</HintPath>
@@ -189,8 +191,9 @@
     <Reference Include="TaleWorlds.TwoDimension.Standalone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>F:\SteamFastLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.TwoDimension.Standalone.dll</HintPath>
     </Reference>
-    <Reference Include="UIExtenderLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>F:\SteamFastLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\UIExtenderLibModule\bin\Win64_Shipping_Client\UIExtenderLib.dll</HintPath>
+    <Reference Include="UIExtenderLib_2.0.0.0, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UIExtenderLib.2.0.0\lib\net472\UIExtenderLib_2.0.0.0.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +203,17 @@
     <Compile Include="PlayerEncounterExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\Interface\Overview.puml" />
+    <None Include="docs\Interface\PrefabExtension.puml" />
+    <None Include="docs\Interface\ViewModelMixin.puml" />
+    <None Include="docs\Runtime\ExtendedVMRuntime.puml" />
+    <None Include="docs\Runtime\Overview.puml" />
+    <None Include="docs\Runtime\PrefabPatching.puml" />
+    <None Include="docs\Runtime\Registration.puml" />
+    <None Include="docs\Runtime\VMPatching.puml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

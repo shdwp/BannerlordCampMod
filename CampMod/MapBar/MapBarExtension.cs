@@ -6,6 +6,7 @@ using TaleWorlds.Core.ViewModelCollection;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using UIExtenderLib;
+using UIExtenderLib.Interface;
 using UIExtenderLib.Prefab;
 using UIExtenderLib.ViewModel;
 
@@ -17,7 +18,7 @@ namespace CampMod.MapBar
         public override int Position => 3;
         public override string Name => "CampButton";
     }
-    
+
     [ViewModelMixin]
     public class MapNavigationVMExtension : BaseViewModelMixin<MapNavigationVM>
     {
